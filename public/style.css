@@ -1,0 +1,292 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul, ul li {
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-result-decoration { 
+	display: none;
+}								/* Общий дизайн сайта - ебучее говно. Доработать */
+								/* Нужно разгрести этот пиздец */
+
+.top-hd-block-background {
+	height: 30px;
+	width: 100%;
+	box-shadow: 0px -5px 25px black;
+	z-index: 2;
+	margin-bottom: 13px;
+	/*border: 1px solid yellow;*/
+}
+
+.top-hd-block {
+	position: relative;
+	height: inherit;
+	width: 1300px;
+	font-size: 13px;
+	margin: 0 auto;
+	/*border: 1px solid blue;*/
+}
+
+.top-hd-block a {
+	color: #0654BA;
+}
+
+.top-hd-block a:hover {
+	text-decoration: underline;
+}
+
+.greeting {
+	position: absolute;
+	width: 290px;
+	line-height: 30px;
+	left: 0;
+	white-space: nowrap;
+	/*border: 1px solid blue;*/
+}
+
+.menu-block-background {
+	min-width: 100%;
+	height: 45px;
+	margin: 0 auto;
+	/*margin-top: 25px;*/
+	background-color: #6524A8;
+	/*border-top: 2px solid #6524A8;
+	border-bottom: 2px solid #6524A8;*/ /* Выбрать подходящий цвет для тематики магазина */
+}
+
+.menu-block {
+	position: relative;
+	width: 1300px;
+	height: inherit;
+	margin: 0 auto;
+	background-color: #6524A8;
+	/*border: 1px solid black;*/
+}
+
+.logo {  					/* Нужно "человеческое" лого */
+	position: absolute;
+	width: 200px;
+	height: inherit;
+	/*border: 1px solid black;*/
+}
+
+.search {
+	display: inline-block;
+	position: relative;
+	width: 400px;
+	height: 35px;
+	line-height: 46px;
+	left: 300px;
+	/*border: 1px solid red;*/
+}
+
+.search input {
+	/*display: inline-block;*/
+	height: inherit;
+	width: inherit;
+	padding-left: 10px;
+	font-size: 18px;
+}
+
+.search img {
+	display: inline-block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 8px;
+	right: 0;
+}
+           						/* Стить сделать нормальным */
+.menu {							/* Стиль - наше все */
+	position: absolute;
+	min-width: 450px;
+	height: inherit;
+	line-height: 45px;
+	top: 0;
+	right: 0;
+	text-align: center;
+	white-space: nowrap;
+	/*border: 1px solid black;*/
+}
+
+.listener {
+	display: inline-table;
+}
+
+.menu li {
+	display: inline-block;
+	padding: 0px 10px;
+	border-right: 1px solid white;
+}
+
+.menu li:last-child {
+	border-right: none;
+}
+
+.menu a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	width: inherit;
+	height: inherit;
+	transition: 0.3s;
+}
+
+.menu li:hover {
+	background-color: #03036F;
+	transition: 0.5s;
+}
+
+.block {
+	position: relative;
+	width: 1300px;
+	height: 800px;
+	/*margin: 0 auto;*/
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	/*border: 1px solid black;*/
+}
+
+#category-menu {
+	position: absolute;
+	width: 230px;
+	left: 0;
+}
+
+#category-menu > ul {					/* Довести до ума */
+	border: 4px solid #6524A8;
+	border-radius: 10px;
+}
+
+#category-menu > ul > li {
+	border-bottom: 1px solid black;
+}
+
+#category-menu > ul > li:last-child {
+	border-bottom: none;
+}
+
+#category-menu ul li a { /* Нужен стиль для ссылок */
+
+}
+
+#category-menu ul li {
+	position: relative;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+#category-menu ul li ul, #category-menu ul li ul li ul { /* скрываю подменюшек 2-го и 3-го уровня */
+	display: none;
+}
+
+#category-menu > ul > li > ul { /* нужен стиль для подменюшки 2-го уровня */
+
+}
+
+#category-menu > ul > li > ul > li > ul { /* нужен стиль для подменюшки 3-го уровня */
+
+}
+
+.arrow {						/* Найти подходящие стрелки для вложенностей */
+	position: absolute;			/* + Чекнуть скрипт, нужно чтоб arrow-down класс с соответствующей стрелкой добавлялся при открытии вложения */
+	right: 10px;
+}
+
+.arrow-down {
+	position: absolute;
+	right: 10px;
+}
+
+.content {					/* Страдай, ты еще не знаешь полноценно node.js, а нужно еже писать функционал */
+	position: absolute;		/* Збс, да? */
+	width: 1000px;
+	height: 90%;
+	right: 0;
+	float: left;
+	/*border: 1px solid black;*/
+}
+
+.slider {
+	position: relative;
+	width: inherit;
+	height: 400px;
+	top: 0;
+	/*border: 1px solid blue;*/
+}
+
+#items {
+	display: none;
+	position: absolute;
+	left: 44.5%;
+	height: 50px;
+	width: 100px;
+	bottom: 0;
+	/*margin: 0 auto;*/
+	z-index: 20;
+	border: 1px solid yellow;
+}
+
+#slides {
+	position: relative;
+	width: inherit;
+	height: inherit;
+}
+
+.slide {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;  /* Что это? */
+	z-index: 1;
+	transition: opacity 2s; /* Так что это? */
+}
+
+
+.slide:nth-of-type(1) { /* а это что? */
+	background-color: #6524A8;
+}
+
+.slide:nth-of-type(2) {
+	background-color: green;
+}
+
+.slide:nth-of-type(3) {
+	background-color: red;
+}
+
+.show {
+	opacity: 1; /* ? */
+	z-index: 2;
+}
+
+#previous img {
+	position: absolute;
+	top: 42%;
+	left: 0;
+	z-index: 3;
+}
+
+#next img {
+	position: absolute;
+	top: 42%;
+	right: 0;
+	z-index: 3;
+}
